@@ -14,7 +14,7 @@ export default function App() {
       <NavigationBar />
       <Router>
         <Switch>
-          <Route path={"/"} exact>
+          <Route path={"/"}>
             <Home />
           </Route>
         </Switch>

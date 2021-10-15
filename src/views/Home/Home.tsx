@@ -6,11 +6,13 @@
 import * as React from "react";
 import "./Home.scss";
 import Header from "../../components/Header/Header";
+import Customers from "../../components/Customers/Customers";
 
 export default function Home() {
   return (
     <>
       <Header />
+      <Customers />
     </>
   );
 }

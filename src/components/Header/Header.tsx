@@ -14,7 +14,7 @@ export default function Header() {
       <div className={"header"}>
         <div className={"header-content"}>
           <h1 className={"header-title"}>MCTzOCK</h1>
-          <Button renderAs={Link} to={"/hire"} color={"primary"}>
+          <Button renderAs={Link} to={"/hire"} color={"link"}>
             Hire me
           </Button>
         </div>

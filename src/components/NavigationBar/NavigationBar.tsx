@@ -73,7 +73,7 @@ export default function Home() {
           <div className={"navbar-end"}>
             <Navbar.Item>
               <div className="buttons">
-                <Button color={"primary"} renderAs={Link} to={"/hire"}>
+                <Button color={"link"} renderAs={Link} to={"/hire"}>
                   Hire me
                 </Button>
               </div>

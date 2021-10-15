@@ -5,7 +5,12 @@
 
 import * as React from "react";
 import "./Home.scss";
+import Header from "../../components/Header/Header";
 
 export default function Home() {
-  return <></>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }

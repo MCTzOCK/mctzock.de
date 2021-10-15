@@ -5,7 +5,20 @@
 
 import * as React from "react";
 import "./Header.scss";
+import { Button } from "react-bulma-components";
+import { Link } from "react-router-dom";
 
 export default function Header() {
-  return <></>;
+  return (
+    <>
+      <div className={"header"}>
+        <div className={"header-content"}>
+          <h1 className={"header-title"}>MCTzOCK</h1>
+          <Button renderAs={Link} to={"/hire"} color={"primary"}>
+            Hire me
+          </Button>
+        </div>
+      </div>
+    </>
+  );
 }

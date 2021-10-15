@@ -4,14 +4,13 @@
  */
 
 import * as React from "react";
-import "./NavigationBar.scss";
 import { BrowserRouter as Router, Link } from "react-router-dom";
-import { Navbar } from "react-bulma-components";
+import { Button, Navbar } from "react-bulma-components";
 
 export default function Home() {
   return (
     <Router>
-      <Navbar>
+      <Navbar fixed={"top"}>
         <Navbar.Brand>
           <Navbar.Item renderAs={Link} to={"/"}>
             <h1 className={"web_logo_name"}>MCTzOCK</h1>
@@ -20,6 +19,24 @@ export default function Home() {
             aria-label={"menu"}
             aria-expanded={"false"}
             data-target={"nav-bar-menu"}
+            onClick={() => {
+              const $navbarBurgers = Array.prototype.slice.call(
+                document.querySelectorAll(".navbar-burger"),
+                0
+              );
+              if ($navbarBurgers.length > 0) {
+                $navbarBurgers.forEach((el) => {
+                  el.addEventListener("click", () => {
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(
+                      target
+                    ) as HTMLElement;
+                    el.classList.toggle("is-active");
+                    $target.classList.toggle("is-active");
+                  });
+                });
+              }
+            }}
           >
             <span aria-hidden={"true"} />
             <span aria-hidden={"true"} />
@@ -34,8 +51,32 @@ export default function Home() {
             <Navbar.Item renderAs={Link} to={"/about"}>
               About
             </Navbar.Item>
-            <Navbar.Item renderAs={Link} to={"/hire"}>
-              Hire me
+            <Navbar.Item renderAs={Link} to={"/history"}>
+              My history
+            </Navbar.Item>
+            <Navbar.Item className={"has-dropdown is-hoverable"}>
+              <Navbar.Link>Projects</Navbar.Link>
+
+              <Navbar.Dropdown>
+                <Navbar.Item renderAs={Link} to={"/projects/jufo2020"}>
+                  Decryptor
+                </Navbar.Item>
+                <Navbar.Item renderAs={Link} to={"/projects/jufo2021"}>
+                  SenOS
+                </Navbar.Item>
+                <Navbar.Item renderAs={Link} to={"/projects/jufo2022"}>
+                  InCode
+                </Navbar.Item>
+              </Navbar.Dropdown>
+            </Navbar.Item>
+          </div>
+          <div className={"navbar-end"}>
+            <Navbar.Item>
+              <div className="buttons">
+                <Button color={"primary"} renderAs={Link} to={"/hire"}>
+                  Hire me
+                </Button>
+              </div>
             </Navbar.Item>
           </div>
         </Navbar.Menu>

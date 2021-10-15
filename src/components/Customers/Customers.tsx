@@ -15,9 +15,7 @@ export default function Customers() {
   return (
     <>
       <div style={{ textAlign: "center", marginTop: "2rem" }}>
-        <p style={{ marginBottom: "2rem" }}>
-          Here is a list of a few of my customers.
-        </p>
+        <p style={{ marginBottom: "2rem" }}>Here are a few of my customers.</p>
         <div className="customer">
           <a
             target={"_blank"}

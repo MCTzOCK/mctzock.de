@@ -6,6 +6,7 @@
 import * as React from "react";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import { Button, Navbar } from "react-bulma-components";
+import logo from "../../assets/logo_trimmed.png";
 
 export default function Home() {
   return (
@@ -13,7 +14,10 @@ export default function Home() {
       <Navbar fixed={"top"}>
         <Navbar.Brand>
           <Navbar.Item renderAs={Link} to={"/"}>
-            <h1 className={"web_logo_name"}>MCTzOCK</h1>
+            <img src={logo} alt={"MCTzOCK"} />
+            <h1 className={"web_logo_name"} style={{ paddingLeft: "0.5rem" }}>
+              MCTzOCK
+            </h1>
           </Navbar.Item>
           <Navbar.Burger
             aria-label={"menu"}
@@ -73,8 +77,16 @@ export default function Home() {
           <div className={"navbar-end"}>
             <Navbar.Item>
               <div className="buttons">
-                <Button color={"link"} renderAs={Link} to={"/hire"}>
+                <Button color={"primary"} renderAs={Link} to={"/hire"}>
                   Hire me
+                </Button>
+                <Button
+                  color={"link"}
+                  onClick={() => {
+                    window.open("http://discord.gg/YEHzrWVTp6", "_blank");
+                  }}
+                >
+                  Discord
                 </Button>
               </div>
             </Navbar.Item>

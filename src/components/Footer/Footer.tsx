@@ -13,7 +13,12 @@ export default function Footer() {
   return (
     <>
       <BrowserRouter>
-        <BulmaFooter>
+        <BulmaFooter
+          style={{
+            marginTop: "3rem",
+            marginBottom: "0",
+          }}
+        >
           <div className={"has-text-centered content"}>
             <p>
               Copyright © 2018-{new Date().getFullYear()}

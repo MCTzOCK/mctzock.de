@@ -1234,6 +1234,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fortawesome/fontawesome-free@^5.15.4":
+  version "5.15.4"
+  resolved "https://registry.npmjs.org/@fortawesome/fontawesome-free/-/fontawesome-free-5.15.4.tgz#ecda5712b61ac852c760d8b3c79c96adca5554e5"
+  integrity sha512-eYm8vijH/hpzr/6/1CJ/V/Eb1xQFW2nnUKArb3z+yUWv7HTwj6M7SP957oMjfZjAHU6qpoNc2wQvIxBLWYa/Jg==
+
 "@gar/promisify@^1.0.1":
   version "1.1.2"
   resolved "https://registry.npmjs.org/@gar/promisify/-/promisify-1.1.2.tgz#30aa825f11d438671d585bd44e7fd564535fc210"
@@ -3187,6 +3192,11 @@ bulma-prefers-dark@^0.1.0-beta.1:
   version "0.1.0-beta.1"
   resolved "https://registry.npmjs.org/bulma-prefers-dark/-/bulma-prefers-dark-0.1.0-beta.1.tgz#074aa71899f389a0137dd3753f0d89e96ab1e59b"
   integrity sha512-ti4sKxIIrTAvGtsYc9Rk66SUZSH/j63EU1hApQijQVlKFF0qBLGSb8E16HhI83KJaIeYP4aAHQv2tj0ara831A==
+
+bulma-timeline@^3.0.4:
+  version "3.0.4"
+  resolved "https://registry.npmjs.org/bulma-timeline/-/bulma-timeline-3.0.4.tgz#494f458098a06dcf8dcc7fe8f2f158b63d1d1ef2"
+  integrity sha512-gCUOcSUuzHoeVMkCpLF49j5Z5yl78XQ+KgJcT+1ju5WIGgBgVytRUob/dw5NHAxPLO2rmcvwYNbCJFp7w4WT4Q==
 
 bulma@^0.9.3:
   version "0.9.3"

@@ -80,7 +80,11 @@ export default function About() {
           first place at the same competition one year later with my project "
           <Link to={"/projects/jufo2021"}>SenOS</Link>". If you are interested
           in the stuff I do, I suggest visiting my{" "}
-          <a href={"https://github.com/MCTzOCK"} target={"_blank"}>
+          <a
+            href={"https://github.com/MCTzOCK"}
+            target={"_blank"}
+            rel={"noreferrer"}
+          >
             GitHub
           </a>
         </p>

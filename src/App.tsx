@@ -8,19 +8,17 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
 import Home from "./views/Home/Home";
 import Footer from "./components/Footer/Footer";
+import About from "./views/About/About";
 
 export default function App() {
   return (
-    <>
+    <Router>
       <NavigationBar />
-      <Router>
-        <Switch>
-          <Route path={"/"}>
-            <Home />
-          </Route>
-        </Switch>
-      </Router>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/about" component={About} />
+      </Switch>
       <Footer />
-    </>
+    </Router>
   );
 }

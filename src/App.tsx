@@ -34,6 +34,12 @@ import MurderMystery from "./views/Projects/side/MurderMystery";
 import HomeTPA from "./views/Projects/side/HomeTPA";
 import CraftionsBot from "./views/Projects/side/CraftionsBot";
 import MinecraftPortFinder from "./views/Projects/side/MinecraftPortFinder";
+import CraftionsAPI from "./views/Projects/side/CraftionsAPI";
+import CraftionsHTTP from "./views/Projects/side/CraftionsHTTP";
+import Lobby from "./views/Projects/side/Lobby";
+import LaserTag from "./views/Projects/side/LaserTag";
+import RageMode from "./views/Projects/side/RageMode";
+import AnimateCSS from "./views/Projects/side/AnimateCSS";
 
 export default function App() {
   return (
@@ -159,6 +165,37 @@ export default function App() {
           exact
           path={["/projects/minecraft-port-finder", "/minecraft-port-finder"]}
           component={MinecraftPortFinder}
+        />
+        <Route
+          exact
+          path={["/projects/craftions-api", "/craftions-api"]}
+          component={CraftionsAPI}
+        />
+        <Route
+          exact
+          path={["/projects/craftions-http", "/craftions-http"]}
+          component={CraftionsHTTP}
+        />
+        <Route exact path={["/projects/lobby", "/lobby"]} component={Lobby} />
+        <Route
+          exact
+          path={["/projects/lasertag", "/lasertag"]}
+          component={LaserTag}
+        />
+        <Route
+          exact
+          path={["/projects/ragemode", "/ragemode"]}
+          component={RageMode}
+        />
+        <Route
+          exact
+          path={[
+            "/projects/animate-css",
+            "/animate-css",
+            "/projects/animate.css",
+            "/animate.css",
+          ]}
+          component={AnimateCSS}
         />
         <Route exact path={"/projects/all"} component={Projects} />
         <Route exact path={"/legal/imprint"} component={Imprint} />

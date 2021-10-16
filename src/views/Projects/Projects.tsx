@@ -11,6 +11,18 @@ import EP2019 from "./main/EP2019/EP2019";
 import JuFo2022 from "./main/JuFo2022/JuFo2022";
 import JuFo2021 from "./main/JuFo2021/JuFo2021";
 import { Button } from "react-bulma-components";
+import AdminTools from "./side/AdminTools";
+import CraftionsBot from "./side/CraftionsBot";
+import EncryptFolder from "./side/EncryptFolder";
+import HomeTPA from "./side/HomeTPA";
+import InCodeAccounts from "./side/InCodeAccounts";
+import InCodeAccountsClient from "./side/InCodeAccountsClient";
+import InCodeURLShorter from "./side/InCodeURLShorter";
+import JavaMySQL from "./side/JavaMySQL";
+import MinecraftPortFinder from "./side/MinecraftPortFinder";
+import MurderMystery from "./side/MurderMystery";
+import NodeJSPortScanner from "./side/NodeJSPortScanner";
+import RSAKeys from "./side/RSAKeys";
 
 export default function Projects() {
   const [mainProjectsVisible, setMainProjectsVisible] = useState(false);
@@ -73,9 +85,40 @@ export default function Projects() {
         </div>
         <div
           className={
-            "side-projects" + (!sideProjectsVisible ? "is-hidden" : "")
+            "side-projects " + (!sideProjectsVisible ? "is-hidden" : "")
           }
-        />
+        >
+          <h1 className={"title has-text-centered mt-6"}>Minecraft</h1>
+          <AdminTools />
+          <HomeTPA />
+          <MurderMystery />
+          <MinecraftPortFinder />
+
+          <h1 className={"title has-text-centered mt-6"}>NodeJS Libraries</h1>
+          <EncryptFolder />
+          <InCodeAccounts />
+          <InCodeAccountsClient />
+          <InCodeURLShorter />
+          <NodeJSPortScanner />
+
+          <h1 className={"title has-text-centered mt-6"}>Java Libraries</h1>
+          <JavaMySQL />
+          <RSAKeys />
+
+          <h1 className={"title has-text-centered mt-6"}>Other</h1>
+          <CraftionsBot />
+        </div>
+        <div className={"has-text-centered"}>
+          <Button
+            color={"link"}
+            className={"mt-6"}
+            onClick={() => {
+              window.open("https://github.com/MCTzOCK", "_blank");
+            }}
+          >
+            See more on GitHub
+          </Button>
+        </div>
       </div>
     </>
   );

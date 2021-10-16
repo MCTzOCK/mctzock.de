@@ -2,7 +2,7 @@
  * @author Ben Siebert <ben@mctzock.de>
  * @copyright (c) 2018-2021 Ben Siebert. All rights reserved.
  */
-import enigma from "../../../assets/enigma.png";
+import enigma from "../../../../assets/enigma.png";
 import * as React from "react";
 import { Button } from "react-bulma-components";
 
@@ -24,7 +24,10 @@ export default function EP2019() {
               marginTop: "2rem",
             }}
             onClick={() => {
-              window.open("/download/enigma_ep2019.zip", "_blank");
+              window.open(
+                "https://download.mctzock.de/enigma_ep2019.zip",
+                "_blank"
+              );
             }}
           >
             Download

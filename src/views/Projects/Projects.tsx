@@ -6,10 +6,10 @@
 import * as React from "react";
 import { useState } from "react";
 import logo from "../../assets/logo_trimmed.png";
-import JuFo2020 from "./JuFo2020/JuFo2020";
-import EP2019 from "./EP2019/EP2019";
-import JuFo2022 from "./JuFo2022/JuFo2022";
-import JuFo2021 from "./JuFo2021/JuFo2021";
+import JuFo2020 from "./main/JuFo2020/JuFo2020";
+import EP2019 from "./main/EP2019/EP2019";
+import JuFo2022 from "./main/JuFo2022/JuFo2022";
+import JuFo2021 from "./main/JuFo2021/JuFo2021";
 import { Button } from "react-bulma-components";
 
 export default function Projects() {

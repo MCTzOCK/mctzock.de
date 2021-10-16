@@ -2,7 +2,7 @@
  * @author Ben Siebert <ben@mctzock.de>
  * @copyright (c) 2018-2021 Ben Siebert. All rights reserved.
  */
-import incode from "../../../assets/incode-400.png";
+import incode from "../../../../assets/incode-400.png";
 import * as React from "react";
 import { Button } from "react-bulma-components";
 

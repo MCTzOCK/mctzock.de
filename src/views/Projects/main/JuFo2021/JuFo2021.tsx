@@ -2,7 +2,7 @@
  * @author Ben Siebert <ben@mctzock.de>
  * @copyright (c) 2018-2021 Ben Siebert. All rights reserved.
  */
-import senos from "../../../assets/senos.png";
+import senos from "../../../../assets/senos.png";
 import * as React from "react";
 
 export default function JuFo2021() {

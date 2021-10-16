@@ -16,12 +16,24 @@ import NotFound from "./views/NotFound/NotFound";
 import DevOpsEngineer from "./views/DevOpsEngineer/DevOpsEngineer";
 import OpenSourceMaintainer from "./views/OpenSourceMaintainer/OpenSourceMaintainer";
 import Projects from "./views/Projects/Projects";
-import EP2019 from "./views/Projects/EP2019/EP2019";
-import JuFo2020 from "./views/Projects/JuFo2020/JuFo2020";
-import JuFo2021 from "./views/Projects/JuFo2021/JuFo2021";
-import JuFo2022 from "./views/Projects/JuFo2022/JuFo2022";
+import EP2019 from "./views/Projects/main/EP2019/EP2019";
+import JuFo2020 from "./views/Projects/main/JuFo2020/JuFo2020";
+import JuFo2021 from "./views/Projects/main/JuFo2021/JuFo2021";
+import JuFo2022 from "./views/Projects/main/JuFo2022/JuFo2022";
 import Imprint from "./views/Legal/Imprint/Imprint";
 import Privacy from "./views/Legal/Privacy/Privacy";
+import EncryptFolder from "./views/Projects/side/EncryptFolder";
+import InCodeAccounts from "./views/Projects/side/InCodeAccounts";
+import InCodeAccountsClient from "./views/Projects/side/InCodeAccountsClient";
+import InCodeURLShorter from "./views/Projects/side/InCodeURLShorter";
+import NodeJSPortScanner from "./views/Projects/side/NodeJSPortScanner";
+import RSAKeys from "./views/Projects/side/RSAKeys";
+import JavaMySQL from "./views/Projects/side/JavaMySQL";
+import AdminTools from "./views/Projects/side/AdminTools";
+import MurderMystery from "./views/Projects/side/MurderMystery";
+import HomeTPA from "./views/Projects/side/HomeTPA";
+import CraftionsBot from "./views/Projects/side/CraftionsBot";
+import MinecraftPortFinder from "./views/Projects/side/MinecraftPortFinder";
 
 export default function App() {
   return (
@@ -87,6 +99,66 @@ export default function App() {
             "/incode",
           ]}
           component={JuFo2022}
+        />
+        <Route
+          exact
+          path={["/projects/encrypt-folder", "/encrypt-folder"]}
+          component={EncryptFolder}
+        />
+        <Route
+          exact
+          path={["/projects/incode-accounts", "/incode-accounts"]}
+          component={InCodeAccounts}
+        />
+        <Route
+          exact
+          path={["/projects/incode-accounts-client", "/incode-accounts-client"]}
+          component={InCodeAccountsClient}
+        />
+        <Route
+          exact
+          path={["/projects/incode-urlshorter", "/incode-urlshorter"]}
+          component={InCodeURLShorter}
+        />
+        <Route
+          exact
+          path={["/projects/nodejs-port-scanner", "/nodejs-port-scanner"]}
+          component={NodeJSPortScanner}
+        />
+        <Route
+          exact
+          path={["/projects/rsa-keys", "/rsa-keys"]}
+          component={RSAKeys}
+        />
+        <Route
+          exact
+          path={["/projects/java-mysql", "/java-mysql"]}
+          component={JavaMySQL}
+        />
+        <Route
+          exact
+          path={["/projects/admin-tools", "/admin-tools"]}
+          component={AdminTools}
+        />
+        <Route
+          exact
+          path={["/projects/murdermystery", "/murdermystery"]}
+          component={MurderMystery}
+        />
+        <Route
+          exact
+          path={["/projects/hometpa", "/hometpa"]}
+          component={HomeTPA}
+        />
+        <Route
+          exact
+          path={["/projects/craftions-bot", "/craftions-bot"]}
+          component={CraftionsBot}
+        />
+        <Route
+          exact
+          path={["/projects/minecraft-port-finder", "/minecraft-port-finder"]}
+          component={MinecraftPortFinder}
         />
         <Route exact path={"/projects/all"} component={Projects} />
         <Route exact path={"/legal/imprint"} component={Imprint} />

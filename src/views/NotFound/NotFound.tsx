@@ -4,23 +4,34 @@
  */
 import { Button } from "react-bulma-components";
 import { Link } from "react-router-dom";
+import logo from "../../assets/logo_trimmed.png";
+import * as React from "react";
 
 export default function NotFound() {
   return (
     <>
-      <div className={"sub-page"}>
-        <h1 className={"sub-page-title title"}>Oops!</h1>
-        <div className={"sub-page-content subtitle"}>
-          We can not find the page you were looking for. Try going home.
-          <br />
-          <Button
-            color={"link"}
-            renderAs={Link}
-            to={"/"}
-            style={{ marginTop: "2rem" }}
+      <div className={"header"}>
+        <div className="header-left">
+          <h1 className="title has-text-danger">
+            Oops, this page was not found
+          </h1>
+          <h1 className="header-subtitle">
+            We could not find the page you were looking for. Try going{" "}
+            <Link to="/">Home</Link>
+          </h1>
+        </div>
+        <div className="header-right" style={{ textAlign: "center" }}>
+          {/*<img src={logo} alt={"MCTzOCK"} />*/}
+          <h1
+            className={"title"}
+            style={{
+              fontFamily: "monospace",
+              fontSize: "8rem",
+            }}
           >
-            Home
-          </Button>
+            404
+          </h1>
+          <h1 className={"subtitle"}>Not Found</h1>
         </div>
       </div>
     </>

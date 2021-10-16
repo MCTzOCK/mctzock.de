@@ -5,7 +5,7 @@
 
 import * as React from "react";
 import "./Header.scss";
-import { BrowserRouter, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../../assets/logo_trimmed.png";
 
 export default function Header() {
@@ -22,9 +22,10 @@ export default function Header() {
             <Link to={"/devops-engineer"}>DevOps Engineer</Link>
             &nbsp; and&nbsp;
             <Link to={"/open-source-maintainer"}>open source maintainer</Link>.
-            You can take a look at my projects or&nbsp;
+            You can take a look at my <Link to={"/projects"}>projects</Link>
+            &nbsp; or&nbsp;
             <Link to={"/hire"}>hire</Link>
-            &nbsp;me for your own <Link to={"/projects"}>projects</Link>!
+            &nbsp;me for your own projects!
           </h1>
         </div>
         <div className="header-right" style={{ textAlign: "center" }}>

@@ -7,7 +7,7 @@ import * as React from "react";
 import "./Footer.scss";
 
 import { Footer as BulmaFooter } from "react-bulma-components";
-import { BrowserRouter, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (

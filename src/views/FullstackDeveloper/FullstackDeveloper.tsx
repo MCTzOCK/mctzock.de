@@ -1,11 +1,10 @@
-import { Link } from "react-router-dom";
-import logo from "../../assets/logo_trimmed.png";
-import * as React from "react";
-
-/**
+/*
  * @author Ben Siebert <ben@mctzock.de>
  * @copyright (c) 2018-2021 Ben Siebert. All rights reserved.
  */
+
+import logo from "../../assets/logo_trimmed.png";
+import * as React from "react";
 
 export default function FullstackDeveloper() {
   return (

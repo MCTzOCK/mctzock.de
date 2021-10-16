@@ -1,12 +1,9 @@
-import { Link } from "react-router-dom";
-import logo from "../../assets/logo_trimmed.png";
-import * as React from "react";
-
 /**
  * @author Ben Siebert <ben@mctzock.de>
  * @copyright (c) 2018-2021 Ben Siebert. All rights reserved.
  */
 
+import * as React from "react";
 import devops from "../../assets/devops.png";
 
 export default function DevOpsEngineer() {

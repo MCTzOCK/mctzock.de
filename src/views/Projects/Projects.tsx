@@ -4,7 +4,6 @@
  */
 
 import * as React from "react";
-import { Button } from "react-bulma-components";
 import logo from "../../assets/logo_trimmed.png";
 
 export default function Projects() {

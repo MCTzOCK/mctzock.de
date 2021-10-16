@@ -17,6 +17,7 @@ import DevOpsEngineer from "./views/DevOpsEngineer/DevOpsEngineer";
 import OpenSourceMaintainer from "./views/OpenSourceMaintainer/OpenSourceMaintainer";
 import Projects from "./views/Projects/Projects";
 import EP2019 from "./views/EP2019/EP2019";
+import JuFo2020 from "./views/JuFo2020/JuFo2020";
 
 export default function App() {
   return (
@@ -49,6 +50,17 @@ export default function App() {
             "/enigma",
           ]}
           component={EP2019}
+        />
+        <Route
+          exact
+          path={[
+            "/projects/decryptor-jufo2020",
+            "/projects/jufo2020",
+            "/projects/decryptor",
+            "/jufo2020",
+            "/decryptor",
+          ]}
+          component={JuFo2020}
         />
         <Route path="*" component={NotFound} />
       </Switch>

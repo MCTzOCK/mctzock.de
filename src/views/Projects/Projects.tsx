@@ -3,11 +3,20 @@
  * @copyright (c) 2018-2021 Ben Siebert. All rights reserved.
  */
 
-import enigma from "../../assets/enigma.png";
 import * as React from "react";
+import { useState } from "react";
 import logo from "../../assets/logo_trimmed.png";
+import JuFo2020 from "./JuFo2020/JuFo2020";
+import EP2019 from "./EP2019/EP2019";
+import JuFo2022 from "./JuFo2022/JuFo2022";
+import JuFo2021 from "./JuFo2021/JuFo2021";
+import { Button } from "react-bulma-components";
 
 export default function Projects() {
+  const [mainProjectsVisible, setMainProjectsVisible] = useState(false);
+
+  const [sideProjectsVisible, setSideProjectsVisible] = useState(false);
+
   return (
     <>
       <div className={"header"}>
@@ -23,7 +32,50 @@ export default function Projects() {
         </div>
       </div>
       <div className={"projects"}>
-        <div className={"project"}></div>
+        <h1
+          className={"title has-text-centered"}
+          onClick={() => {
+            setMainProjectsVisible(!mainProjectsVisible);
+          }}
+        >
+          Main Projects
+        </h1>
+        <div className={"has-text-centered"}>
+          <Button
+            color={"link"}
+            onClick={() => {
+              setMainProjectsVisible(!mainProjectsVisible);
+            }}
+          >
+            {!mainProjectsVisible ? "Show" : "Hide"} Main Projects
+          </Button>
+        </div>
+        <div
+          className={
+            "main-projects " + (!mainProjectsVisible ? "is-hidden" : "")
+          }
+        >
+          <EP2019 />
+          <JuFo2020 />
+          <JuFo2021 />
+          <JuFo2022 />
+        </div>
+        <h1 className={"title has-text-centered m-6"}>Side Projects</h1>
+        <div className={"has-text-centered"}>
+          <Button
+            color={"link"}
+            onClick={() => {
+              setSideProjectsVisible(!sideProjectsVisible);
+            }}
+          >
+            {!sideProjectsVisible ? "Show" : "Hide"} Side Projects
+          </Button>
+        </div>
+        <div
+          className={
+            "side-projects" + (!sideProjectsVisible ? "is-hidden" : "")
+          }
+        />
       </div>
     </>
   );

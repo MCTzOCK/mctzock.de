@@ -46,14 +46,7 @@ export default function JuFo2020() {
           </h1>
         </div>
         <div className="header-right" style={{ textAlign: "center" }}>
-          <img
-            src={decryptor}
-            alt={"Decryptor"}
-            style={{
-              borderRadius: "50%",
-              scale: ".5",
-            }}
-          />
+          <img src={decryptor} alt={"Decryptor"} width={512} height={512} />
         </div>
       </div>
     </>

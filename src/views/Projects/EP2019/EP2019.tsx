@@ -17,18 +17,18 @@ export default function EP2019() {
             With that program you can encrypt and decrypt data with an password.
             You can download this project. But attention, the project is not
             really good, because I wasn't so experienced back then.
-            <Button
-              color={"link"}
-              style={{
-                marginTop: "2rem",
-              }}
-              onClick={() => {
-                window.open("/download/enigma_ep2019.zip", "_blank");
-              }}
-            >
-              Download
-            </Button>
           </h1>
+          <Button
+            color={"link"}
+            style={{
+              marginTop: "2rem",
+            }}
+            onClick={() => {
+              window.open("/download/enigma_ep2019.zip", "_blank");
+            }}
+          >
+            Download
+          </Button>
         </div>
         <div className="header-right" style={{ textAlign: "center" }}>
           <img src={enigma} alt={"Enigma"} />

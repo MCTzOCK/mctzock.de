@@ -22,6 +22,18 @@ export default function HomeTPA() {
               className={"mt-6"}
               onClick={() => {
                 window.open(
+                  "https://download.mctzock.de/plugins/HomeTpa-1.0-SNAPSHOT.jar",
+                  "_blank"
+                );
+              }}
+            >
+              Download
+            </Button>
+            <Button
+              color={"link"}
+              className={"mt-6"}
+              onClick={() => {
+                window.open(
                   "https://www.spigotmc.org/resources/tpa-home.86679/",
                   "_blank"
                 );

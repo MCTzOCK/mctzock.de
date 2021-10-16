@@ -21,6 +21,18 @@ export default function Lobby() {
               className={"mt-6"}
               onClick={() => {
                 window.open(
+                  "https://download.mctzock.de/plugins/Lobby-1.0-SNAPSHOT.jar",
+                  "_blank"
+                );
+              }}
+            >
+              Download
+            </Button>
+            <Button
+              color={"link"}
+              className={"mt-6"}
+              onClick={() => {
+                window.open(
                   "https://www.spigotmc.org/resources/lobby-system-1-8-1-16-x.88615/",
                   "_blank"
                 );

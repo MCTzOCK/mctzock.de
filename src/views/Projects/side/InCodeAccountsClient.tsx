@@ -14,7 +14,8 @@ export default function InCodeAccountsClient() {
         <div className="header-left">
           <h1 className="title">@incodelang/accounts-client</h1>
           <h1 className="header-subtitle">
-            @incodelang/accounts-client is the web client for my npm package
+            @incodelang/accounts-client is the web client for my npm
+            package&nbsp;
             <Link to={"/projects/incode-accounts"}>@incodelang/accounts</Link>
           </h1>
           <div className={"buttons"}>

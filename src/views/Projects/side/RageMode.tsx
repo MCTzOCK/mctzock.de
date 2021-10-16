@@ -22,6 +22,18 @@ export default function RageMode() {
               className={"mt-6"}
               onClick={() => {
                 window.open(
+                  "https://download.mctzock.de/plugins/ragemode-1.0-SNAPSHOT.jar",
+                  "_blank"
+                );
+              }}
+            >
+              Download
+            </Button>
+            <Button
+              color={"link"}
+              className={"mt-6"}
+              onClick={() => {
+                window.open(
                   "https://github.com/CraftionsMC/Ragemode",
                   "_blank"
                 );

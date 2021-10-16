@@ -23,6 +23,12 @@ import MinecraftPortFinder from "./side/MinecraftPortFinder";
 import MurderMystery from "./side/MurderMystery";
 import NodeJSPortScanner from "./side/NodeJSPortScanner";
 import RSAKeys from "./side/RSAKeys";
+import Lobby from "./side/Lobby";
+import CraftionsAPI from "./side/CraftionsAPI";
+import AnimateCSS from "./side/AnimateCSS";
+import CraftionsHTTP from "./side/CraftionsHTTP";
+import LaserTag from "./side/LaserTag";
+import RageMode from "./side/RageMode";
 
 export default function Projects() {
   const [mainProjectsVisible, setMainProjectsVisible] = useState(false);
@@ -93,6 +99,10 @@ export default function Projects() {
           <HomeTPA />
           <MurderMystery />
           <MinecraftPortFinder />
+          <Lobby />
+          <CraftionsAPI />
+          <LaserTag />
+          <RageMode />
 
           <h1 className={"title has-text-centered mt-6"}>NodeJS Libraries</h1>
           <EncryptFolder />
@@ -107,17 +117,20 @@ export default function Projects() {
 
           <h1 className={"title has-text-centered mt-6"}>Other</h1>
           <CraftionsBot />
-        </div>
-        <div className={"has-text-centered"}>
-          <Button
-            color={"link"}
-            className={"mt-6"}
-            onClick={() => {
-              window.open("https://github.com/MCTzOCK", "_blank");
-            }}
-          >
-            See more on GitHub
-          </Button>
+          <AnimateCSS />
+          <CraftionsHTTP />
+
+          <div className={"has-text-centered"}>
+            <Button
+              color={"link"}
+              className={"mt-6"}
+              onClick={() => {
+                window.open("https://github.com/MCTzOCK", "_blank");
+              }}
+            >
+              See more on GitHub
+            </Button>
+          </div>
         </div>
       </div>
     </>

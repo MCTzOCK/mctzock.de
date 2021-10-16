@@ -20,6 +20,18 @@ export default function AnimateCSS() {
               className={"mt-6"}
               onClick={() => {
                 window.open(
+                  "https://cdn.senos.xyz/animate.css/dist/animate.min.css",
+                  "_blank"
+                );
+              }}
+            >
+              Download
+            </Button>
+            <Button
+              color={"link"}
+              className={"mt-6"}
+              onClick={() => {
+                window.open(
                   "https://github.com/SenOSDev/Animate.css",
                   "_blank"
                 );

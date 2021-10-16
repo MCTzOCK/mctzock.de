@@ -15,9 +15,9 @@ export default function JuFo2020() {
           <h1 className="title">Decryptor</h1>
           <h1 className="header-subtitle">
             The Decryptor is the next generation of my&nbsp;
-            <Link to={"/projects/ep2019"}>Enigma</Link>&nbsp;. In this Project
-            I've added many encryption methods. With the Project I've earned the
-            3rd place at the competition "Jugend Forscht". You can download the
+            <Link to={"/projects/ep2019"}>Enigma</Link>. In this Project I've
+            added many encryption methods. With the Project I've earned the 3rd
+            place at the competition "Jugend Forscht". You can download the
             Project or view the source code by clicking on the buttons below.
             <div className={"field is-grouped"}>
               <Button

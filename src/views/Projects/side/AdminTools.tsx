@@ -22,6 +22,18 @@ export default function AdminTools() {
               className={"mt-6"}
               onClick={() => {
                 window.open(
+                  "https://download.mctzock.de/plugins/AdminTools-1.0-SNAPSHOT.jar",
+                  "_blank"
+                );
+              }}
+            >
+              Download
+            </Button>
+            <Button
+              color={"link"}
+              className={"mt-6"}
+              onClick={() => {
+                window.open(
                   "https://www.spigotmc.org/resources/admintools.86179/",
                   "_blank"
                 );

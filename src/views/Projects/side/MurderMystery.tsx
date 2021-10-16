@@ -23,6 +23,18 @@ export default function MurderMystery() {
               className={"mt-6"}
               onClick={() => {
                 window.open(
+                  "https://download.mctzock.de/plugins/murdermystery-1.0-SNAPSHOT.jar",
+                  "_blank"
+                );
+              }}
+            >
+              Download
+            </Button>
+            <Button
+              color={"link"}
+              className={"mt-6"}
+              onClick={() => {
+                window.open(
                   "https://www.spigotmc.org/resources/murdermystery.87606/",
                   "_blank"
                 );

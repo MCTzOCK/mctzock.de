@@ -4,7 +4,7 @@
  */
 
 import { Button } from "react-bulma-components";
-import craftions from "../../../assets/craftions.png";
+import minecraft from "../../../assets/minecraft.png";
 
 export default function CraftionsAPI() {
   return (
@@ -21,12 +21,24 @@ export default function CraftionsAPI() {
               className={"mt-6"}
               onClick={() => {
                 window.open(
+                  "https://download.mctzock.de/plugins/api-1.2-SNAPSHOT.jar",
+                  "_blank"
+                );
+              }}
+            >
+              Download
+            </Button>
+            <Button
+              color={"link"}
+              className={"mt-6"}
+              onClick={() => {
+                window.open(
                   "https://www.spigotmc.org/resources/craftions-api.93384/",
                   "_blank"
                 );
               }}
             >
-              SpigotMC
+              View on SpigotMC
             </Button>
             <Button
               color={"link"}
@@ -40,7 +52,7 @@ export default function CraftionsAPI() {
           </div>
         </div>
         <div className="header-right" style={{ textAlign: "center" }}>
-          <img src={craftions} alt={"Craftions"} width={256} />
+          <img src={minecraft} alt={"Minecraft"} width={256} />
         </div>
       </div>
     </>

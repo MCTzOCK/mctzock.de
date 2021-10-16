@@ -4,7 +4,6 @@
  */
 
 import { Button } from "react-bulma-components";
-import { Link } from "react-router-dom";
 import node from "../../../assets/node.svg";
 
 export default function NodeJSPortScanner() {

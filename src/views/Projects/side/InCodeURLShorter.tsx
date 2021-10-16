@@ -4,7 +4,6 @@
  */
 
 import { Button } from "react-bulma-components";
-import { Link } from "react-router-dom";
 import incode from "../../../assets/incode-400.png";
 
 export default function InCodeURLShorter() {

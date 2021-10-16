@@ -15,6 +15,8 @@ import FullstackDeveloper from "./views/FullstackDeveloper/FullstackDeveloper";
 import NotFound from "./views/NotFound/NotFound";
 import DevOpsEngineer from "./views/DevOpsEngineer/DevOpsEngineer";
 import OpenSourceMaintainer from "./views/OpenSourceMaintainer/OpenSourceMaintainer";
+import Projects from "./views/Projects/Projects";
+import EP2019 from "./views/EP2019/EP2019";
 
 export default function App() {
   return (
@@ -35,6 +37,18 @@ export default function App() {
           exact
           path="/open-source-maintainer"
           component={OpenSourceMaintainer}
+        />
+        <Route exact path="/projects" component={Projects} />
+        <Route
+          exact
+          path={[
+            "/projects/enigma-ep2019",
+            "/projects/ep2019",
+            "/projects/enigma",
+            "/ep2019",
+            "/enigma",
+          ]}
+          component={EP2019}
         />
         <Route path="*" component={NotFound} />
       </Switch>

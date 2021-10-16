@@ -2,7 +2,7 @@
  * @author Ben Siebert <ben@mctzock.de>
  * @copyright (c) 2018-2021 Ben Siebert. All rights reserved.
  */
-import enigma from "../../assets/enigma.png";
+import enigma from "../../../assets/enigma.png";
 import * as React from "react";
 import { Button } from "react-bulma-components";
 

@@ -2,7 +2,7 @@
  * @author Ben Siebert <ben@mctzock.de>
  * @copyright (c) 2018-2021 Ben Siebert. All rights reserved.
  */
-import decryptor from "../../assets/decryptor.jpg";
+import decryptor from "../../../assets/decryptor.jpg";
 import * as React from "react";
 import { Button } from "react-bulma-components";
 import { Link } from "react-router-dom";

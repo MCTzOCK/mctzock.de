@@ -3,6 +3,7 @@
  * @copyright (c) 2018-2021 Ben Siebert. All rights reserved.
  */
 
+import enigma from "../../assets/enigma.png";
 import * as React from "react";
 import logo from "../../assets/logo_trimmed.png";
 
@@ -20,6 +21,9 @@ export default function Projects() {
         <div className="header-right" style={{ textAlign: "center" }}>
           <img src={logo} alt={"DevOps"} />
         </div>
+      </div>
+      <div className={"projects"}>
+        <div className={"project"}></div>
       </div>
     </>
   );

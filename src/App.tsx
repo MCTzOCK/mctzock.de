@@ -16,8 +16,10 @@ import NotFound from "./views/NotFound/NotFound";
 import DevOpsEngineer from "./views/DevOpsEngineer/DevOpsEngineer";
 import OpenSourceMaintainer from "./views/OpenSourceMaintainer/OpenSourceMaintainer";
 import Projects from "./views/Projects/Projects";
-import EP2019 from "./views/EP2019/EP2019";
-import JuFo2020 from "./views/JuFo2020/JuFo2020";
+import EP2019 from "./views/Projects/EP2019/EP2019";
+import JuFo2020 from "./views/Projects/JuFo2020/JuFo2020";
+import JuFo2021 from "./views/Projects/JuFo2021/JuFo2021";
+import JuFo2022 from "./views/Projects/JuFo2022/JuFo2022";
 
 export default function App() {
   return (
@@ -62,6 +64,29 @@ export default function App() {
           ]}
           component={JuFo2020}
         />
+        <Route
+          exact
+          path={[
+            "/projects/senos-jufo2021",
+            "/projects/jufo2021",
+            "/projects/senos",
+            "/jufo2021",
+            "/senos",
+          ]}
+          component={JuFo2021}
+        />
+        <Route
+          exact
+          path={[
+            "/projects/incode-jufo2022",
+            "/projects/jufo2022",
+            "/projects/incode",
+            "/jufo2022",
+            "/incode",
+          ]}
+          component={JuFo2022}
+        />
+        <Route exact path={"/projects/all"} component={Projects} />
         <Route path="*" component={NotFound} />
       </Switch>
       <Footer />

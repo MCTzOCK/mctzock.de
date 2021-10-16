@@ -58,9 +58,7 @@ export default function Home() {
             My history
           </Navbar.Item>
           <Navbar.Item className={"has-dropdown is-hoverable"}>
-            <Navbar.Link>
-              <Link to={"/projects"}>Projects</Link>
-            </Navbar.Link>
+            <Navbar.Link>Projects</Navbar.Link>
 
             <Navbar.Dropdown>
               <Navbar.Item renderAs={Link} to={"/projects/ep2019"}>
@@ -74,6 +72,9 @@ export default function Home() {
               </Navbar.Item>
               <Navbar.Item renderAs={Link} to={"/projects/jufo2022"}>
                 InCode
+              </Navbar.Item>
+              <Navbar.Item renderAs={Link} to={"/projects/all"}>
+                View all
               </Navbar.Item>
             </Navbar.Dropdown>
           </Navbar.Item>

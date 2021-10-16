@@ -78,7 +78,14 @@ export default function Projects() {
           <JuFo2021 />
           <JuFo2022 />
         </div>
-        <h1 className={"title has-text-centered m-6"}>Side Projects</h1>
+        <h1
+          className={"title has-text-centered m-6"}
+          onClick={() => {
+            setSideProjectsVisible(!sideProjectsVisible);
+          }}
+        >
+          Side Projects
+        </h1>
         <div className={"has-text-centered"}>
           <Button
             color={"link"}

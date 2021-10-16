@@ -13,6 +13,8 @@ import History from "./views/History/History";
 import Hire from "./views/Hire/Hire";
 import FullstackDeveloper from "./views/FullstackDeveloper/FullstackDeveloper";
 import NotFound from "./views/NotFound/NotFound";
+import DevOpsEngineer from "./views/DevOpsEngineer/DevOpsEngineer";
+import OpenSourceMaintainer from "./views/OpenSourceMaintainer/OpenSourceMaintainer";
 
 export default function App() {
   return (
@@ -27,6 +29,12 @@ export default function App() {
           exact
           path="/fullstack-developer"
           component={FullstackDeveloper}
+        />
+        <Route exact path="/devops-engineer" component={DevOpsEngineer} />
+        <Route
+          exact
+          path="/open-source-maintainer"
+          component={OpenSourceMaintainer}
         />
         <Route path="*" component={NotFound} />
       </Switch>

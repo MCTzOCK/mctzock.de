@@ -33,6 +33,7 @@ export default function Footer() {
               GPL-3.0-only
             </a>
             . <br />
+            <br />
             <div className={"footer-links"}>
               <a
                 href={"https://github.com/MCTzOCK"}
@@ -67,6 +68,10 @@ export default function Footer() {
               >
                 Twitch
               </a>
+              <br />
+              <Link to={"/legal/imprint"}>Imprint</Link>
+              <em>•</em>
+              <Link to={"/legal/privacy"}>Privacy</Link>
             </div>
           </p>
         </div>

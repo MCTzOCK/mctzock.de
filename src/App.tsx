@@ -20,6 +20,8 @@ import EP2019 from "./views/Projects/EP2019/EP2019";
 import JuFo2020 from "./views/Projects/JuFo2020/JuFo2020";
 import JuFo2021 from "./views/Projects/JuFo2021/JuFo2021";
 import JuFo2022 from "./views/Projects/JuFo2022/JuFo2022";
+import Imprint from "./views/Legal/Imprint/Imprint";
+import Privacy from "./views/Legal/Privacy/Privacy";
 
 export default function App() {
   return (
@@ -87,6 +89,8 @@ export default function App() {
           component={JuFo2022}
         />
         <Route exact path={"/projects/all"} component={Projects} />
+        <Route exact path={"/legal/imprint"} component={Imprint} />
+        <Route exact path={"/legal/privacy"} component={Privacy} />
         <Route path="*" component={NotFound} />
       </Switch>
       <Footer />

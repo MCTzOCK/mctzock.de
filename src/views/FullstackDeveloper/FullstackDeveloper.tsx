@@ -3,4 +3,6 @@
  * @copyright (c) 2018-2021 Ben Siebert. All rights reserved.
  */
 
-export default function FullstackDeveloper() {}
+export default function FullstackDeveloper() {
+  return <></>;
+}

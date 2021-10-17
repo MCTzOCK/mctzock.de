@@ -5,7 +5,7 @@
 
 import { Button } from "react-bulma-components";
 import { Link } from "react-router-dom";
-import incode from "../../../assets/incode-400.png";
+import node from "../../../assets/node.svg";
 
 export default function InCodeAccountsClient() {
   return (
@@ -46,7 +46,7 @@ export default function InCodeAccountsClient() {
           </div>
         </div>
         <div className="header-right" style={{ textAlign: "center" }}>
-          <img src={incode} alt={"InCode"} width={512} height={256} />
+          <img src={node} alt={"node-js"} width={512} height={256} />
         </div>
       </div>
     </>

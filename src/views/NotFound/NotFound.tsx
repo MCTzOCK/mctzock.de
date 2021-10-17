@@ -21,7 +21,6 @@ export default function NotFound() {
           </h1>
         </div>
         <div className="header-right" style={{ textAlign: "center" }}>
-          {/*<img src={logo} alt={"MCTzOCK"} />*/}
           <h1
             className={"title"}
             style={{

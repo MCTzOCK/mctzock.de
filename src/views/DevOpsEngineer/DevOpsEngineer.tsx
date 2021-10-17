@@ -19,7 +19,7 @@ export default function DevOpsEngineer() {
           </h1>
         </div>
         <div className="header-right" style={{ textAlign: "center" }}>
-          <img src={devops} alt={"DevOps"} />
+          <img src={devops} alt={"DevOps"} width={512} />
         </div>
       </div>
     </>

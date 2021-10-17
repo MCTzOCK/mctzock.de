@@ -1,0 +1,23 @@
+/**
+ * @author Ben Siebert <ben@mctzock.de>
+ * @copyright (c) 2018-2021 Ben Siebert. All rights reserved.
+ */
+
+.customer {
+  margin: 2rem;
+  display: inline;
+
+  .customer-logo {
+    filter: saturate(0%);
+    transition: filter 500ms ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      filter: saturate(100%);
+    }
+  }
+
+  .customer-0erPinq, .customer-RedBuild, .customer-leaf4, .customer-gcc {
+    border-radius: 50%;
+  }
+}

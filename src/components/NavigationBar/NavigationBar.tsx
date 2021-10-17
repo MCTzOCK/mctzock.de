@@ -88,7 +88,7 @@ export default function Home() {
               <Button
                 color={"link"}
                 onClick={() => {
-                  window.open("http://discord.gg/YEHzrWVTp6", "_blank");
+                  window.open("https://discord.gg/YEHzrWVTp6", "_blank");
                 }}
               >
                 Discord

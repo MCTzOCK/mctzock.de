@@ -146,7 +146,7 @@ export default function Projects() {
         <h1
           className={"title has-text-centered m-6"}
           onClick={() => {
-            setSideProjectsVisible(!sideProjectsVisible);
+            setCustomerProjectsVisible(!customerProjectsVisible);
           }}
         >
           Customer Projects
@@ -166,8 +166,8 @@ export default function Projects() {
             "customer-projects " + (!customerProjectsVisible ? "is-hidden" : "")
           }
         >
-          <A0erPinqBot />
-          <RedBuildWebsite />
+          <A0erPinqBot animation />
+          <RedBuildWebsite animation />
         </div>
       </div>
     </>

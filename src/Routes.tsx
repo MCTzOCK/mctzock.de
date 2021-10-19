@@ -38,6 +38,8 @@ import Imprint from "./views/Legal/Imprint/Imprint";
 import Privacy from "./views/Legal/Privacy/Privacy";
 import NotFound from "./views/NotFound/NotFound";
 import * as React from "react";
+import A0erPinqBot from "./views/Projects/customer/0erPinq/0erPinqBot";
+import RedBuildWebsite from "./views/Projects/customer/RedBuild/RedBuildWebsite";
 
 export default function Routes() {
   return (
@@ -192,6 +194,12 @@ export default function Routes() {
           "/animate.css",
         ]}
         component={AnimateCSS}
+      />
+      <Route exact path={"/projects/0erPinq/bot"} component={A0erPinqBot} />
+      <Route
+        exact
+        path={"/projects/RedBuild/website"}
+        component={RedBuildWebsite}
       />
       <Route exact path={"/projects/all"} component={Projects} />
       <Route exact path={"/legal/imprint"} component={Imprint} />

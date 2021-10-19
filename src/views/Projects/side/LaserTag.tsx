@@ -10,7 +10,12 @@ import RHeader, { RProps } from "../../../components/RHeader/RHeader";
 export default function LaserTag(props: RProps) {
   return (
     <>
-      <RHeader title={"LaserTag"} image={minecraft} imageAlt={"Minecraft"}>
+      <RHeader
+        title={"LaserTag"}
+        image={minecraft}
+        imageAlt={"Minecraft"}
+        noAnimation={props.animation}
+      >
         I've developed LaserTag in Minecraft. You can shoot other players and
         earn points.
         <div className={"buttons"}>

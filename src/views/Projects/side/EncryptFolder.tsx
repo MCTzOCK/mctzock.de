@@ -5,45 +5,43 @@
 
 import { Button } from "react-bulma-components";
 import node from "../../../assets/node.svg";
+import RHeader, { RProps } from "../../../components/RHeader/RHeader";
 
-export default function EncryptFolder() {
+export default function EncryptFolder(props: RProps) {
   return (
     <>
-      <div className={"header"}>
-        <div className="header-left">
-          <h1 className="title">encrypt-folder</h1>
-          <h1 className="header-subtitle">
-            encrypt-folder is an API for encrypting and decrypting whole folders
-            using either Node.JS or the CLI implementation.
-          </h1>
-          <div className={"buttons"}>
-            <Button
-              color={"link"}
-              className={"mt-6"}
-              onClick={() => {
-                window.open("https://npmjs.com/encrypt-folder", "_blank");
-              }}
-            >
-              View on NPM
-            </Button>
-            <Button
-              color={"link"}
-              className={"mt-6"}
-              onClick={() => {
-                window.open(
-                  "https://github.com/MCTzOCK/encrypt-folder",
-                  "_blank"
-                );
-              }}
-            >
-              Source Code
-            </Button>
-          </div>
+      <RHeader
+        title={"encrypt-folder"}
+        image={node}
+        imageAlt={"NodeJS"}
+        noAnimation={props.animation}
+      >
+        encrypt-folder is an API for encrypting and decrypting whole folders
+        using either Node.JS or the CLI implementation.
+        <div className={"buttons"}>
+          <Button
+            color={"link"}
+            className={"mt-6"}
+            onClick={() => {
+              window.open("https://npmjs.com/encrypt-folder", "_blank");
+            }}
+          >
+            View on NPM
+          </Button>
+          <Button
+            color={"link"}
+            className={"mt-6"}
+            onClick={() => {
+              window.open(
+                "https://github.com/MCTzOCK/encrypt-folder",
+                "_blank"
+              );
+            }}
+          >
+            Source Code
+          </Button>
         </div>
-        <div className="header-right" style={{ textAlign: "center" }}>
-          <img src={node} alt={"node-js"} width={512} height={256} />
-        </div>
-      </div>
+      </RHeader>
     </>
   );
 }

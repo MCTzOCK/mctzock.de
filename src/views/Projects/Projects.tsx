@@ -29,11 +29,14 @@ import AnimateCSS from "./side/AnimateCSS";
 import CraftionsHTTP from "./side/CraftionsHTTP";
 import LaserTag from "./side/LaserTag";
 import RageMode from "./side/RageMode";
+import A0erPinqBot from "./customer/0erPinq/0erPinqBot";
+import RedBuildWebsite from "./customer/RedBuild/RedBuildWebsite";
 
 export default function Projects() {
   const [mainProjectsVisible, setMainProjectsVisible] = useState(false);
 
   const [sideProjectsVisible, setSideProjectsVisible] = useState(false);
+  const [customerProjectsVisible, setCustomerProjectsVisible] = useState(false);
 
   return (
     <>
@@ -46,7 +49,7 @@ export default function Projects() {
           </h1>
         </div>
         <div className="header-right" style={{ textAlign: "center" }}>
-          <img src={logo} alt={"DevOps"} />
+          <img src={logo} alt={"MCTzOCK"} />
         </div>
       </div>
       <div className={"projects"}>
@@ -73,10 +76,10 @@ export default function Projects() {
             "main-projects " + (!mainProjectsVisible ? "is-hidden" : "")
           }
         >
-          <EP2019 />
-          <JuFo2020 />
-          <JuFo2021 />
-          <JuFo2022 />
+          <EP2019 animation />
+          <JuFo2020 animation />
+          <JuFo2021 animation />
+          <JuFo2022 animation />
         </div>
         <h1
           className={"title has-text-centered m-6"}
@@ -102,30 +105,30 @@ export default function Projects() {
           }
         >
           <h1 className={"title has-text-centered mt-6"}>Minecraft</h1>
-          <AdminTools />
-          <HomeTPA />
-          <MurderMystery />
-          <MinecraftPortFinder />
-          <Lobby />
-          <CraftionsAPI />
-          <LaserTag />
-          <RageMode />
+          <AdminTools animation />
+          <HomeTPA animation />
+          <MurderMystery animation />
+          <MinecraftPortFinder animation />
+          <Lobby animation />
+          <CraftionsAPI animation />
+          <LaserTag animation />
+          <RageMode animation />
 
           <h1 className={"title has-text-centered mt-6"}>NodeJS Libraries</h1>
-          <EncryptFolder />
-          <InCodeAccounts />
-          <InCodeAccountsClient />
-          <InCodeURLShorter />
-          <NodeJSPortScanner />
+          <EncryptFolder animation />
+          <InCodeAccounts animation />
+          <InCodeAccountsClient animation />
+          <InCodeURLShorter animation />
+          <NodeJSPortScanner animation />
 
           <h1 className={"title has-text-centered mt-6"}>Java Libraries</h1>
-          <JavaMySQL />
-          <RSAKeys />
+          <JavaMySQL animation />
+          <RSAKeys animation />
 
           <h1 className={"title has-text-centered mt-6"}>Other</h1>
-          <CraftionsBot />
-          <AnimateCSS />
-          <CraftionsHTTP />
+          <CraftionsBot animation />
+          <AnimateCSS animation />
+          <CraftionsHTTP animation />
 
           <div className={"has-text-centered"}>
             <Button
@@ -138,6 +141,33 @@ export default function Projects() {
               See more on GitHub
             </Button>
           </div>
+        </div>
+
+        <h1
+          className={"title has-text-centered m-6"}
+          onClick={() => {
+            setSideProjectsVisible(!sideProjectsVisible);
+          }}
+        >
+          Customer Projects
+        </h1>
+        <div className={"has-text-centered"}>
+          <Button
+            color={"link"}
+            onClick={() => {
+              setCustomerProjectsVisible(!customerProjectsVisible);
+            }}
+          >
+            {!customerProjectsVisible ? "Show" : "Hide"} Customer Projects
+          </Button>
+        </div>
+        <div
+          className={
+            "customer-projects " + (!customerProjectsVisible ? "is-hidden" : "")
+          }
+        >
+          <A0erPinqBot />
+          <RedBuildWebsite />
         </div>
       </div>
     </>

@@ -5,22 +5,19 @@
 
 import logo from "../../assets/logo_trimmed.png";
 import * as React from "react";
+import RHeader from "../../components/RHeader/RHeader";
 
 export default function FullstackDeveloper() {
   return (
     <>
-      <div className={"header"}>
-        <div className="header-left">
-          <h1 className="title">Fullstack Developer</h1>
-          <h1 className="header-subtitle">
-            As a Fullstack Developer I work on the frontend and the backend! I
-            create beautiful designs and powerful backend services.
-          </h1>
-        </div>
-        <div className="header-right" style={{ textAlign: "center" }}>
-          <img src={logo} alt={"Fullstack Developer"} />
-        </div>
-      </div>
+      <RHeader
+        title={"Fullstack Developer"}
+        image={logo}
+        imageAlt={"FullstackDeveloper Developer"}
+      >
+        As a Fullstack Developer I work on the frontend and the backend! I
+        create beautiful designs and powerful backend services.
+      </RHeader>
     </>
   );
 }

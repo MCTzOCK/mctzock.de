@@ -13,7 +13,6 @@
   .header {
     display: grid;
     grid: "l r";
-    grid-template-columns: 40%;
     .header-left {
       grid-area: l;
     }
@@ -31,7 +30,7 @@
   padding-left: 10%;
   padding-right: 10%;
 
-  .header-left {
+  .header-left, .header-right {
 
     .header-subtitle {
       font-size: 1.5rem;

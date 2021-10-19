@@ -4,33 +4,35 @@
  */
 import { Link } from "react-router-dom";
 import * as React from "react";
+import RHeader from "../../components/RHeader/RHeader";
 
 export default function NotFound() {
   return (
     <>
-      <div className={"header"}>
-        <div className="header-left">
-          <h1 className="title has-text-danger">
+      <RHeader
+        title={
+          <span className={"has-text-danger"}>
             Oops, this page was not found
-          </h1>
-          <h1 className="header-subtitle">
-            We could not find the page you were looking for. Try going{" "}
-            <Link to="/">Home</Link>
-          </h1>
-        </div>
-        <div className="header-right" style={{ textAlign: "center" }}>
-          <h1
-            className={"title"}
-            style={{
-              fontFamily: "monospace",
-              fontSize: "8rem",
-            }}
-          >
-            404
-          </h1>
-          <h1 className={"subtitle"}>Not Found</h1>
-        </div>
-      </div>
+          </span>
+        }
+        customRightHand={
+          <>
+            <h1
+              className={"title"}
+              style={{
+                fontFamily: "monospace",
+                fontSize: "8rem",
+              }}
+            >
+              404
+            </h1>
+            <h1 className={"subtitle"}>Not Found</h1>
+          </>
+        }
+      >
+        We could not find the page you were looking for. Try going{" "}
+        <Link to="/">Home</Link>
+      </RHeader>
     </>
   );
 }

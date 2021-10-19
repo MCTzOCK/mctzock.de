@@ -5,33 +5,30 @@
 
 import { Button } from "react-bulma-components";
 import craftions from "../../../assets/craftions.png";
+import RHeader, { RProps } from "../../../components/RHeader/RHeader";
 
-export default function CraftionsHTTP() {
+export default function CraftionsHTTP(props: RProps) {
   return (
     <>
-      <div className={"header"}>
-        <div className="header-left">
-          <h1 className="title">Craftions HTTP</h1>
-          <h1 className="header-subtitle">
-            Craftions HTTP is a HTTP Server that supports many scripting
-            languages.
-          </h1>
-          <div className={"buttons"}>
-            <Button
-              color={"link"}
-              className={"mt-6"}
-              onClick={() => {
-                window.open("https://github.com/CraftionsMC/HTTP", "_blank");
-              }}
-            >
-              Source Code
-            </Button>
-          </div>
+      <RHeader
+        title={"Craftions HTTP"}
+        image={craftions}
+        imageAlt={"Craftions"}
+        noAnimation={props.animation}
+      >
+        Craftions HTTP is a HTTP Server that supports many scripting languages.
+        <div className={"buttons"}>
+          <Button
+            color={"link"}
+            className={"mt-6"}
+            onClick={() => {
+              window.open("https://github.com/CraftionsMC/HTTP", "_blank");
+            }}
+          >
+            Source Code
+          </Button>
         </div>
-        <div className="header-right" style={{ textAlign: "center" }}>
-          <img src={craftions} alt={"Craftions"} width={256} />
-        </div>
-      </div>
+      </RHeader>
     </>
   );
 }

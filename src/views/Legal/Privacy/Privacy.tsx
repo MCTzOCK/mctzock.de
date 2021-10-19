@@ -1,3 +1,5 @@
+import * as React from "react";
+
 /**
  * @author Ben Siebert <ben@mctzock.de>
  * @copyright (c) 2018-2021 Ben Siebert. All rights reserved.
@@ -5,9 +7,9 @@
 
 export default function Privacy() {
   return (
-    <div className={"sub-page"}>
-      <h4 className={"sub-page-title"}>Datenschutzerklärung</h4>
-      <div className={"sub-page-content"}>
+    <div className={"m-6"}>
+      <h1 className={"title"}>Datenschutz</h1>
+      <div className={"subtitle mt-4"}>
         <p>
           Wir freuen uns sehr über Ihr Interesse an unserem Unternehmen.
           Datenschutz hat einen besonders hohen Stellenwert für die
@@ -43,7 +45,7 @@ export default function Privacy() {
           personenbezogene Daten auch auf alternativen Wegen, beispielsweise
           telefonisch, an uns zu übermitteln.
         </p>
-        <h4>1. Begriffsbestimmungen</h4>
+        <h4 className={"subtitle mt-4"}>1. Begriffsbestimmungen</h4>
         <p>
           Die Datenschutzerklärung der mctzock.de beruht auf den
           Begrifflichkeiten, die durch den Europäischen Richtlinien- und
@@ -59,7 +61,7 @@ export default function Privacy() {
         </p>
         <ul style={{ listStyle: "none" }}>
           <li>
-            <h4>a) personenbezogene Daten</h4>
+            <h4 className={"subtitle mt-4"}>a) personenbezogene Daten</h4>
             <p>
               Personenbezogene Daten sind alle Informationen, die sich auf eine
               identifizierte oder identifizierbare natürliche Person (im
@@ -74,7 +76,7 @@ export default function Privacy() {
             </p>
           </li>
           <li>
-            <h4>b) betroffene Person</h4>
+            <h4 className={"subtitle mt-4"}>b) betroffene Person</h4>
             <p>
               Betroffene Person ist jede identifizierte oder identifizierbare
               natürliche Person, deren personenbezogene Daten von dem für die
@@ -82,7 +84,7 @@ export default function Privacy() {
             </p>
           </li>
           <li>
-            <h4>c) Verarbeitung</h4>
+            <h4 className={"subtitle mt-4"}>c) Verarbeitung</h4>
             <p>
               Verarbeitung ist jeder mit oder ohne Hilfe automatisierter
               Verfahren ausgeführte Vorgang oder jede solche Vorgangsreihe im
@@ -95,7 +97,9 @@ export default function Privacy() {
             </p>
           </li>
           <li>
-            <h4>d) Einschränkung der Verarbeitung</h4>
+            <h4 className={"subtitle mt-4"}>
+              d) Einschränkung der Verarbeitung
+            </h4>
             <p>
               Einschränkung der Verarbeitung ist die Markierung gespeicherter
               personenbezogener Daten mit dem Ziel, ihre künftige Verarbeitung
@@ -103,7 +107,7 @@ export default function Privacy() {
             </p>
           </li>
           <li>
-            <h4>e) Profiling</h4>
+            <h4 className={"subtitle mt-4"}>e) Profiling</h4>
             <p>
               Profiling ist jede Art der automatisierten Verarbeitung
               personenbezogener Daten, die darin besteht, dass diese
@@ -117,7 +121,7 @@ export default function Privacy() {
             </p>
           </li>
           <li>
-            <h4>f) Pseudonymisierung</h4>
+            <h4 className={"subtitle mt-4"}>f) Pseudonymisierung</h4>
             <p>
               Pseudonymisierung ist die Verarbeitung personenbezogener Daten in
               einer Weise, auf welche die personenbezogenen Daten ohne
@@ -131,7 +135,7 @@ export default function Privacy() {
             </p>
           </li>
           <li>
-            <h4>
+            <h4 className={"subtitle mt-4"}>
               g) Verantwortlicher oder für die Verarbeitung Verantwortlicher
             </h4>
             <p>
@@ -147,7 +151,7 @@ export default function Privacy() {
             </p>
           </li>
           <li>
-            <h4>h) Auftragsverarbeiter</h4>
+            <h4 className={"subtitle mt-4"}>h) Auftragsverarbeiter</h4>
             <p>
               Auftragsverarbeiter ist eine natürliche oder juristische Person,
               Behörde, Einrichtung oder andere Stelle, die personenbezogene
@@ -155,7 +159,7 @@ export default function Privacy() {
             </p>
           </li>
           <li>
-            <h4>i) Empfänger</h4>
+            <h4 className={"subtitle mt-4"}>i) Empfänger</h4>
             <p>
               Empfänger ist eine natürliche oder juristische Person, Behörde,
               Einrichtung oder andere Stelle, der personenbezogene Daten
@@ -167,7 +171,7 @@ export default function Privacy() {
             </p>
           </li>
           <li>
-            <h4>j) Dritter</h4>
+            <h4 className={"subtitle mt-4"}>j) Dritter</h4>
             <p>
               Dritter ist eine natürliche oder juristische Person, Behörde,
               Einrichtung oder andere Stelle außer der betroffenen Person, dem
@@ -178,7 +182,7 @@ export default function Privacy() {
             </p>
           </li>
           <li>
-            <h4>k) Einwilligung</h4>
+            <h4 className={"subtitle mt-4"}>k) Einwilligung</h4>
             <p>
               Einwilligung ist jede von der betroffenen Person freiwillig für
               den bestimmten Fall in informierter Weise und unmissverständlich
@@ -189,7 +193,9 @@ export default function Privacy() {
             </p>
           </li>
         </ul>
-        <h4>2. Name und Anschrift des für die Verarbeitung Verantwortlichen</h4>
+        <h4 className={"subtitle mt-4"}>
+          2. Name und Anschrift des für die Verarbeitung Verantwortlichen
+        </h4>
         <p>
           Verantwortlicher im Sinne der Datenschutz-Grundverordnung, sonstiger
           in den Mitgliedstaaten der Europäischen Union geltenden
@@ -203,7 +209,9 @@ export default function Privacy() {
         <p>Tel.: 015254398340</p>
         <p>E-Mail: ben@mctzock.de</p>
         <p>Website: mctzock.de</p>
-        <h4>3. Erfassung von allgemeinen Daten und Informationen</h4>
+        <h4 className={"subtitle mt-4"}>
+          3. Erfassung von allgemeinen Daten und Informationen
+        </h4>
         <p>
           Die Internetseite der mctzock.de erfasst mit jedem Aufruf der
           Internetseite durch eine betroffene Person oder ein automatisiertes
@@ -239,7 +247,7 @@ export default function Privacy() {
           Server-Logfiles werden getrennt von allen durch eine betroffene Person
           angegebenen personenbezogenen Daten gespeichert.
         </p>
-        <h4>
+        <h4 className={"subtitle mt-4"}>
           4. Routinemäßige Löschung und Sperrung von personenbezogenen Daten
         </h4>
         <p>
@@ -257,10 +265,10 @@ export default function Privacy() {
           personenbezogenen Daten routinemäßig und entsprechend den gesetzlichen
           Vorschriften gesperrt oder gelöscht.
         </p>
-        <h4>5. Rechte der betroffenen Person</h4>
+        <h4 className={"subtitle mt-4"}>5. Rechte der betroffenen Person</h4>
         <ul style={{ listStyle: "none" }}>
           <li>
-            <h4>a) Recht auf Bestätigung</h4>
+            <h4 className={"subtitle mt-4"}>a) Recht auf Bestätigung</h4>
             <p>
               Jede betroffene Person hat das vom Europäischen Richtlinien- und
               Verordnungsgeber eingeräumte Recht, von dem für die Verarbeitung
@@ -272,7 +280,7 @@ export default function Privacy() {
             </p>
           </li>
           <li>
-            <h4>b) Recht auf Auskunft</h4>
+            <h4 className={"subtitle mt-4"}>b) Recht auf Auskunft</h4>
             <p>
               Jede von der Verarbeitung personenbezogener Daten betroffene
               Person hat das vom Europäischen Richtlinien- und Verordnungsgeber
@@ -337,7 +345,7 @@ export default function Privacy() {
             </p>
           </li>
           <li>
-            <h4>c) Recht auf Berichtigung</h4>
+            <h4 className={"subtitle mt-4"}>c) Recht auf Berichtigung</h4>
             <p>
               Jede von der Verarbeitung personenbezogener Daten betroffene
               Person hat das vom Europäischen Richtlinien- und Verordnungsgeber
@@ -355,7 +363,9 @@ export default function Privacy() {
             </p>
           </li>
           <li>
-            <h4>d) Recht auf Löschung (Recht auf Vergessen werden)</h4>
+            <h4 className={"subtitle mt-4"}>
+              d) Recht auf Löschung (Recht auf Vergessen werden)
+            </h4>
             <p>
               Jede von der Verarbeitung personenbezogener Daten betroffene
               Person hat das vom Europäischen Richtlinien- und Verordnungsgeber
@@ -425,7 +435,9 @@ export default function Privacy() {
             </p>
           </li>
           <li>
-            <h4>e) Recht auf Einschränkung der Verarbeitung</h4>
+            <h4 className={"subtitle mt-4"}>
+              e) Recht auf Einschränkung der Verarbeitung
+            </h4>
             <p>
               Jede von der Verarbeitung personenbezogener Daten betroffene
               Person hat das vom Europäischen Richtlinien- und Verordnungsgeber
@@ -469,7 +481,9 @@ export default function Privacy() {
             </p>
           </li>
           <li>
-            <h4>f) Recht auf Datenübertragbarkeit</h4>
+            <h4 className={"subtitle mt-4"}>
+              f) Recht auf Datenübertragbarkeit
+            </h4>
             <p>
               Jede von der Verarbeitung personenbezogener Daten betroffene
               Person hat das vom Europäischen Richtlinien- und Verordnungsgeber
@@ -503,7 +517,7 @@ export default function Privacy() {
             </p>
           </li>
           <li>
-            <h4>g) Recht auf Widerspruch</h4>
+            <h4 className={"subtitle mt-4"}>g) Recht auf Widerspruch</h4>
             <p>
               Jede von der Verarbeitung personenbezogener Daten betroffene
               Person hat das vom Europäischen Richtlinien- und Verordnungsgeber
@@ -553,7 +567,7 @@ export default function Privacy() {
             </p>
           </li>
           <li>
-            <h4>
+            <h4 className={"subtitle mt-4"}>
               h) Automatisierte Entscheidungen im Einzelfall einschließlich
               Profiling
             </h4>
@@ -593,7 +607,7 @@ export default function Privacy() {
             </p>
           </li>
           <li>
-            <h4>
+            <h4 className={"subtitle mt-4"}>
               i) Recht auf Widerruf einer datenschutzrechtlichen Einwilligung
             </h4>
             <p>
@@ -610,7 +624,7 @@ export default function Privacy() {
             </p>
           </li>
         </ul>
-        <h4>
+        <h4 className={"subtitle mt-4"}>
           6. Datenschutzbestimmungen zu Einsatz und Verwendung von Twitter
         </h4>
         <p>
@@ -677,7 +691,7 @@ export default function Privacy() {
           Die geltenden Datenschutzbestimmungen von Twitter sind unter
           https://twitter.com/privacy?lang=de abrufbar.
         </p>
-        <h4>
+        <h4 className={"subtitle mt-4"}>
           7. Datenschutzbestimmungen zu Einsatz und Verwendung von YouTube
         </h4>
         <p>
@@ -734,7 +748,7 @@ export default function Privacy() {
           Aufschluss über die Erhebung, Verarbeitung und Nutzung
           personenbezogener Daten durch YouTube und Google.
         </p>
-        <h4>8. Rechtsgrundlage der Verarbeitung</h4>
+        <h4 className={"subtitle mt-4"}>8. Rechtsgrundlage der Verarbeitung</h4>
         <p>
           Art. 6 I lit. a DS-GVO dient unserem Unternehmen als Rechtsgrundlage
           für Verarbeitungsvorgänge, bei denen wir eine Einwilligung für einen
@@ -771,7 +785,7 @@ export default function Privacy() {
           anzunehmen sein könnte, wenn die betroffene Person ein Kunde des
           Verantwortlichen ist (Erwägungsgrund 47 Satz 2 DS-GVO).
         </p>
-        <h4>
+        <h4 className={"subtitle mt-4"}>
           9. Berechtigte Interessen an der Verarbeitung, die von dem
           Verantwortlichen oder einem Dritten verfolgt werden
         </h4>
@@ -781,7 +795,7 @@ export default function Privacy() {
           Geschäftstätigkeit zugunsten des Wohlergehens all unserer Mitarbeiter
           und unserer Anteilseigner.
         </p>
-        <h4>
+        <h4 className={"subtitle mt-4"}>
           10. Dauer, für die die personenbezogenen Daten gespeichert werden
         </h4>
         <p>
@@ -791,7 +805,7 @@ export default function Privacy() {
           sofern sie nicht mehr zur Vertragserfüllung oder Vertragsanbahnung
           erforderlich sind.
         </p>
-        <h4>
+        <h4 className={"subtitle mt-4"}>
           11. Gesetzliche oder vertragliche Vorschriften zur Bereitstellung der
           personenbezogenen Daten; Erforderlichkeit für den Vertragsabschluss;
           Verpflichtung der betroffenen Person, die personenbezogenen Daten
@@ -818,7 +832,9 @@ export default function Privacy() {
           personenbezogenen Daten bereitzustellen, und welche Folgen die
           Nichtbereitstellung der personenbezogenen Daten hätte.
         </p>
-        <h4>12. Bestehen einer automatisierten Entscheidungsfindung</h4>
+        <h4 className={"subtitle mt-4"}>
+          12. Bestehen einer automatisierten Entscheidungsfindung
+        </h4>
         <p>
           Als verantwortungsbewusstes Unternehmen verzichten wir auf eine
           automatische Entscheidungsfindung oder ein Profiling.
@@ -826,15 +842,15 @@ export default function Privacy() {
         <p>
           Diese Datenschutzerklärung wurde durch den
           Datenschutzerklärungs-Generator der DGD Deutsche Gesellschaft für
-          Datenschutz GmbH, die als{" "}
+          Datenschutz GmbH, die als&nbsp;
           <a href="https://dg-datenschutz.de/datenschutz-dienstleistungen/externer-datenschutzbeauftragter/">
             Externer Datenschutzbeauftragter Bremen
-          </a>{" "}
-          tätig ist, in Kooperation mit dem{" "}
+          </a>
+          &nbsp; tätig ist, in Kooperation mit dem&nbsp;
           <a href="https://www.wbs-law.de/">
             Anwalt für Datenschutzrecht Christian Solmecke
-          </a>{" "}
-          erstellt.
+          </a>
+          &nbsp; erstellt.
         </p>
       </div>
     </div>

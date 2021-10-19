@@ -5,45 +5,43 @@
 
 import { Button } from "react-bulma-components";
 import node from "../../../assets/node.svg";
+import RHeader, { RProps } from "../../../components/RHeader/RHeader";
 
-export default function NodeJSPortScanner() {
+export default function NodeJSPortScanner(props: RProps) {
   return (
     <>
-      <div className={"header"}>
-        <div className="header-left">
-          <h1 className="title">nodejs-port-scanner</h1>
-          <h1 className="header-subtitle">
-            nodejs-port-scanner is a npm package that allows you to scan for
-            open ports on a specific host.
-          </h1>
-          <div className={"buttons"}>
-            <Button
-              color={"link"}
-              className={"mt-6"}
-              onClick={() => {
-                window.open("https://npmjs.com/nodejs-port-scanner", "_blank");
-              }}
-            >
-              View on NPM
-            </Button>
-            <Button
-              color={"link"}
-              className={"mt-6"}
-              onClick={() => {
-                window.open(
-                  "https://github.com/MCTzOCK/nodejs-port-scanner",
-                  "_blank"
-                );
-              }}
-            >
-              Source Code
-            </Button>
-          </div>
+      <RHeader
+        title={"nodejs-port-scanner"}
+        image={node}
+        imageAlt={"nodejs"}
+        noAnimation={props.animation}
+      >
+        nodejs-port-scanner is a npm package that allows you to scan for open
+        ports on a specific host.
+        <div className={"buttons"}>
+          <Button
+            color={"link"}
+            className={"mt-6"}
+            onClick={() => {
+              window.open("https://npmjs.com/nodejs-port-scanner", "_blank");
+            }}
+          >
+            View on NPM
+          </Button>
+          <Button
+            color={"link"}
+            className={"mt-6"}
+            onClick={() => {
+              window.open(
+                "https://github.com/MCTzOCK/nodejs-port-scanner",
+                "_blank"
+              );
+            }}
+          >
+            Source Code
+          </Button>
         </div>
-        <div className="header-right" style={{ textAlign: "center" }}>
-          <img src={node} alt={"node-js"} width={512} height={256} />
-        </div>
-      </div>
+      </RHeader>
     </>
   );
 }

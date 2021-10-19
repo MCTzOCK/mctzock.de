@@ -8,9 +8,9 @@ import * as React from "react";
 export default function Imprint() {
   return (
     <>
-      <div className="sub-page">
-        <h1 className={"sub-page-title title"}>Impressum</h1>
-        <div className={"subtitle sub-page-content"}>
+      <div className={"m-6"}>
+        <h1 className={"title"}>Impressum</h1>
+        <div className={"subtitle"}>
           <p>Angaben gemäß § 5 TMG</p>
           <p>
             Ben Siebet <br />

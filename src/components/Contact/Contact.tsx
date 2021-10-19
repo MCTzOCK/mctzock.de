@@ -18,6 +18,7 @@ export default function Contact() {
             className={"subtitle has-text-danger"}
             href={"mailto:dev@mctzock.de"}
             target={"_blank"}
+            rel={"noreferrer"}
           >
             E-Mail
           </a>
@@ -26,6 +27,7 @@ export default function Contact() {
             className={"subtitle has-text-danger"}
             href={"https://discord.gg/YEHzrWVTp6"}
             target={"_blank"}
+            rel={"noreferrer"}
           >
             Discord
           </a>

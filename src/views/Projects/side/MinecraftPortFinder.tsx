@@ -5,48 +5,46 @@
 
 import { Button } from "react-bulma-components";
 import minecraft from "../../../assets/minecraft.png";
+import RHeader, { RProps } from "../../../components/RHeader/RHeader";
 
-export default function MinecraftPortFinder() {
+export default function MinecraftPortFinder(props: RProps) {
   return (
     <>
-      <div className={"header"}>
-        <div className="header-left">
-          <h1 className="title">Minecraft Port Finder</h1>
-          <h1 className="header-subtitle">
-            Minecraft Port Finder is a program which can scan a whole host for
-            running Minecraft Servers.
-          </h1>
-          <div className={"buttons"}>
-            <Button
-              color={"link"}
-              className={"mt-6"}
-              onClick={() => {
-                window.open(
-                  "http://cloud.mctzock.de/serverping/1.2/ServerPing.jar",
-                  "_blank"
-                );
-              }}
-            >
-              Download
-            </Button>
-            <Button
-              color={"link"}
-              className={"mt-6"}
-              onClick={() => {
-                window.open(
-                  "https://github.com/MCTzOCK/MinecraftPortFinder",
-                  "_blank"
-                );
-              }}
-            >
-              Source Code
-            </Button>
-          </div>
+      <RHeader
+        title={"Minecraft Port Finder"}
+        image={minecraft}
+        imageAlt={"Minecraft"}
+        noAnimation={props.animation}
+      >
+        Minecraft Port Finder is a program which can scan a whole host for
+        running Minecraft Servers.
+        <div className={"buttons"}>
+          <Button
+            color={"link"}
+            className={"mt-6"}
+            onClick={() => {
+              window.open(
+                "http://cloud.mctzock.de/serverping/1.2/ServerPing.jar",
+                "_blank"
+              );
+            }}
+          >
+            Download
+          </Button>
+          <Button
+            color={"link"}
+            className={"mt-6"}
+            onClick={() => {
+              window.open(
+                "https://github.com/MCTzOCK/MinecraftPortFinder",
+                "_blank"
+              );
+            }}
+          >
+            Source Code
+          </Button>
         </div>
-        <div className="header-right" style={{ textAlign: "center" }}>
-          <img src={minecraft} alt={"Minecraft"} width={256} />
-        </div>
-      </div>
+      </RHeader>
     </>
   );
 }

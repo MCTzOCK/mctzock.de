@@ -5,33 +5,31 @@
 
 import { Button } from "react-bulma-components";
 import java from "../../../assets/java.png";
+import RHeader, { RProps } from "../../../components/RHeader/RHeader";
 
-export default function JavaMySQL() {
+export default function JavaMySQL(props: RProps) {
   return (
     <>
-      <div className={"header"}>
-        <div className="header-left">
-          <h1 className="title">JavaMySQL</h1>
-          <h1 className="header-subtitle">
-            JavaMySQL is a Java Library that allows you to connect and manage a
-            MySQL Database.
-          </h1>
-          <div className={"buttons"}>
-            <Button
-              color={"link"}
-              className={"mt-6"}
-              onClick={() => {
-                window.open("https://github.com/MCTzOCK/JavaMySQL", "_blank");
-              }}
-            >
-              Source Code
-            </Button>
-          </div>
+      <RHeader
+        title={"JavaMySQL"}
+        image={java}
+        imageAlt={"Java"}
+        noAnimation={props.animation}
+      >
+        JavaMySQL is a Java Library that allows you to connect and manage a
+        MySQL Database.
+        <div className={"buttons"}>
+          <Button
+            color={"link"}
+            className={"mt-6"}
+            onClick={() => {
+              window.open("https://github.com/MCTzOCK/JavaMySQL", "_blank");
+            }}
+          >
+            Source Code
+          </Button>
         </div>
-        <div className="header-right" style={{ textAlign: "center" }}>
-          <img src={java} alt={"java"} width={256} height={128} />
-        </div>
-      </div>
+      </RHeader>
     </>
   );
 }

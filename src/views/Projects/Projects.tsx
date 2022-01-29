@@ -29,14 +29,11 @@ import AnimateCSS from "./side/AnimateCSS";
 import CraftionsHTTP from "./side/CraftionsHTTP";
 import LaserTag from "./side/LaserTag";
 import RageMode from "./side/RageMode";
-import A0erPinqBot from "./customer/0erPinq/0erPinqBot";
-import RedBuildWebsite from "./customer/RedBuild/RedBuildWebsite";
 
 export default function Projects() {
   const [mainProjectsVisible, setMainProjectsVisible] = useState(false);
 
   const [sideProjectsVisible, setSideProjectsVisible] = useState(false);
-  const [customerProjectsVisible, setCustomerProjectsVisible] = useState(false);
 
   return (
     <>
@@ -141,33 +138,6 @@ export default function Projects() {
               See more on GitHub
             </Button>
           </div>
-        </div>
-
-        <h1
-          className={"title has-text-centered m-6"}
-          onClick={() => {
-            setCustomerProjectsVisible(!customerProjectsVisible);
-          }}
-        >
-          Customer Projects
-        </h1>
-        <div className={"has-text-centered"}>
-          <Button
-            color={"link"}
-            onClick={() => {
-              setCustomerProjectsVisible(!customerProjectsVisible);
-            }}
-          >
-            {!customerProjectsVisible ? "Show" : "Hide"} Customer Projects
-          </Button>
-        </div>
-        <div
-          className={
-            "customer-projects " + (!customerProjectsVisible ? "is-hidden" : "")
-          }
-        >
-          <A0erPinqBot animation />
-          <RedBuildWebsite animation />
         </div>
       </div>
     </>

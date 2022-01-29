@@ -51,6 +51,9 @@ export default function Home() {
           <Navbar.Item renderAs={Link} to={"/"}>
             Home
           </Navbar.Item>
+          <Navbar.Item renderAs={Link} to={"/customers"}>
+            Customers
+          </Navbar.Item>
           <Navbar.Item renderAs={Link} to={"/about"}>
             About
           </Navbar.Item>

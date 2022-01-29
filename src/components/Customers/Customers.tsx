@@ -10,6 +10,7 @@ import customer_0erPing from "../../assets/customers/0erPinq.png";
 import customer_RedBuild from "../../assets/customers/RedBuild.webp";
 import customer_leaf4 from "../../assets/customers/leaf4.jpg";
 import customer_gcc from "../../assets/customers/gcc.webp";
+import customer_star_v from "../../assets/customers/star-v.bmp";
 
 export default function Customers() {
   return (
@@ -71,6 +72,17 @@ export default function Customers() {
               width={128}
               height={128}
               className="customer-logo customer-gcc"
+            />
+          </a>
+        </div>
+        <div className="customer">
+          <a target={"_blank"} href={"https://star-v.de/"} rel={"noreferrer"}>
+            <img
+              src={customer_star_v}
+              alt="Star-V"
+              width={128}
+              height={128}
+              className="customer-logo customer-star-v"
             />
           </a>
         </div>

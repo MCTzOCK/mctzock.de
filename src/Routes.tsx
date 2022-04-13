@@ -41,6 +41,7 @@ import * as React from "react";
 import A0erPinqBot from "./views/Projects/customer/0erPinq/0erPinqBot";
 import RedBuildWebsite from "./views/Projects/customer/RedBuild/RedBuildWebsite";
 import Customers from "./views/Customers/Customers";
+import Awards from "./components/Awards/Awards";
 
 export default function Routes() {
   return (
@@ -206,6 +207,7 @@ export default function Routes() {
       <Route exact path={"/projects/all"} component={Projects} />
       <Route exact path={"/legal/imprint"} component={Imprint} />
       <Route exact path={"/legal/privacy"} component={Privacy} />
+      <Route exact path={"/awards"} component={Awards} />
       <Route path="*" component={NotFound} />
     </Switch>
   );

@@ -10,6 +10,7 @@ import Contact from "../../components/Contact/Contact";
 import RHeader from "../../components/RHeader/RHeader";
 import logo from "../../assets/logo_trimmed.png";
 import { Link } from "react-router-dom";
+import Awards from "../../components/Awards/Awards";
 
 export default function Home() {
   return (

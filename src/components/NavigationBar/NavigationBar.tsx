@@ -15,7 +15,7 @@ export default function Home() {
         <Navbar.Item renderAs={Link} to={"/"}>
           <img src={logo} alt={"MCTzOCK"} />
           <h1 className={"web_logo_name"} style={{ paddingLeft: "0.5rem" }}>
-            MCTzOCK
+            Ben Siebert
           </h1>
         </Navbar.Item>
         <Navbar.Burger
@@ -54,11 +54,20 @@ export default function Home() {
           <Navbar.Item renderAs={Link} to={"/customers"}>
             Customers
           </Navbar.Item>
-          <Navbar.Item renderAs={Link} to={"/about"}>
-            About
-          </Navbar.Item>
-          <Navbar.Item renderAs={Link} to={"/history"}>
-            My history
+          <Navbar.Item className={"has-dropdown is-hoverable"}>
+            <Navbar.Link>Me</Navbar.Link>
+
+            <Navbar.Dropdown>
+              <Navbar.Item renderAs={Link} to={"/about"}>
+                About
+              </Navbar.Item>
+              <Navbar.Item renderAs={Link} to={"/awards"}>
+                Awards
+              </Navbar.Item>
+              <Navbar.Item renderAs={Link} to={"/history"}>
+                My history
+              </Navbar.Item>
+            </Navbar.Dropdown>
           </Navbar.Item>
           <Navbar.Item className={"has-dropdown is-hoverable"}>
             <Navbar.Link>Projects</Navbar.Link>

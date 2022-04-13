@@ -9,7 +9,6 @@ import customer_0erPing from "../../assets/customers/0erPinq.png";
 import customer_RedBuild from "../../assets/customers/RedBuild.webp";
 import customer_leaf4 from "../../assets/customers/leaf4.jpg";
 import customer_gcc from "../../assets/customers/gcc.webp";
-import customer_star_v from "../../assets/customers/star-v.bmp";
 import RHeader from "../../components/RHeader/RHeader";
 import { Button } from "react-bulma-components";
 
@@ -104,32 +103,6 @@ export default function Customers() {
             color={"link"}
             onClick={() => {
               window.open("https://discord.gg/mrP4MfJEWQ", "_blank");
-            }}
-          >
-            Discord
-          </Button>
-        </div>
-      </RHeader>
-      <RHeader
-        title={"Star-V"}
-        image={customer_star_v}
-        imageStyle={{ width: "256px", borderRadius: "50%" }}
-        noAnimation
-      >
-        Star-V is my latest customer. I've developed their Discord Bot.
-        <div className="buttons mt-4">
-          <Button
-            color={"link"}
-            onClick={() => {
-              window.open("https://star-v.de", "_blank");
-            }}
-          >
-            Website
-          </Button>
-          <Button
-            color={"link"}
-            onClick={() => {
-              window.open("https://discord.gg/star-v", "_blank");
             }}
           >
             Discord
